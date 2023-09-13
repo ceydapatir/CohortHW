@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CohortHomework4/1.0.0": {
+        "runtime": {
+          "CohortHomework4.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CohortHomework4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

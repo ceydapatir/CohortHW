@@ -1,0 +1,15 @@
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\bin\Debug\net7.0\CohortHomework4.exe
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\bin\Debug\net7.0\CohortHomework4.deps.json
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\bin\Debug\net7.0\CohortHomework4.runtimeconfig.json
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\bin\Debug\net7.0\CohortHomework4.dll
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\bin\Debug\net7.0\CohortHomework4.pdb
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\CohortHomework4.csproj.AssemblyReference.cache
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\CohortHomework4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\CohortHomework4.AssemblyInfoInputs.cache
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\CohortHomework4.AssemblyInfo.cs
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\CohortHomework4.csproj.CoreCompileInputs.cache
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\CohortHomework4.dll
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\refint\CohortHomework4.dll
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\CohortHomework4.pdb
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\CohortHomework4.genruntimeconfig.cache
+C:\Users\patir\OneDrive\Masaüstü\GithubProject\VbBootcamp\CohortHomework4\obj\Debug\net7.0\ref\CohortHomework4.dll
