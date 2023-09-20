@@ -9,14 +9,15 @@ using static CohortHw_ModelUsing.Operations.GetMovie.GetMoviesQuery;
 namespace CohortHw_ModelUsing.Operations.GetMovie;
 public class GetMovieDetailQuery
 {
+    public int MovieId { get; set; }
     private readonly MovieDbContext _context;
 
     public GetMovieDetailQuery(MovieDbContext context){
         _context = context;
     }
 
-    public List<GetMovieViewModel> Handle(int id){
-        var movie = _context.Movies.Where(i => i.Id == id).SingleOrDefault();
+    public List<GetMovieViewModel> Handle(){
+        var movie = _context.Movies.Where(i => i.Id == MovieId).SingleOrDefault();
         List<GetMovieViewModel>  MovieViewList = new List<GetMovieViewModel>();
         if (movie is not null)
         {
