@@ -43,7 +43,8 @@ namespace CohortHw_ModelUsing.Controllers
             try
             {
                 CreateMovieCommand query = new CreateMovieCommand(_context);
-                query.Handle(movie);
+                query.CreateModel = movie;
+                query.Handle();
             }
             catch (Exception ex)
             {
