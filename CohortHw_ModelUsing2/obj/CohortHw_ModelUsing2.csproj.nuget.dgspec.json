@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj": {}
+    "C:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj": {}
   },
   "projects": {
-    "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj": {
+    "C:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj",
+        "projectUniqueName": "C:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj",
         "projectName": "CohortHw_ModelUsing2",
-        "projectPath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj",
+        "projectPath": "C:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj",
         "packagesPath": "C:\\Users\\patir\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\obj\\",
+        "outputPath": "C:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patir\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.11, )"

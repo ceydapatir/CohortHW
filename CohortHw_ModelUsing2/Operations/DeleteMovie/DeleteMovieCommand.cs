@@ -18,7 +18,7 @@ public class DeleteMovieCommand
     public void Handle(){
         var movie = _context.Movies.Where(i => i.Id == MovieId).SingleOrDefault();
         if (movie is null)
-            throw new InvalidOperationException("The movie already exists.");
+            throw new InvalidOperationException("The movie doesn't exist.");
         
         _context.Movies.Remove(movie);
         _context.SaveChanges();

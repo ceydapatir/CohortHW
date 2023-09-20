@@ -10,6 +10,8 @@ using CohortHw_ModelUsing2.Operations.CreateMovie;
 using static CohortHw_ModelUsing2.Operations.UpdateMovie.UpdateMovieCommand;
 using CohortHw_ModelUsing2.Operations.UpdateMovie;
 using System.Linq.Expressions;
+using AutoMapper;
+using CohortHw_ModelUsing2.Operations.DeleteMovie;
 
 namespace CohortHw_ModelUsing2.Controllers
 {
@@ -18,9 +20,11 @@ namespace CohortHw_ModelUsing2.Controllers
     public class MoviesController : ControllerBase
     {
         private readonly MovieDbContext _context;
+        private readonly IMapper _mapper;
 
-        public MoviesController(MovieDbContext context){
+        public MoviesController(MovieDbContext context, IMapper mapper){
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -32,7 +36,7 @@ namespace CohortHw_ModelUsing2.Controllers
 
         [HttpGet("{id}")]
         public IActionResult GetMovieById(int id){
-            GetMovieDetailQuery query = new GetMovieDetailQuery(_context);
+            GetMovieDetailQuery query = new GetMovieDetailQuery(_context, _mapper);
             query.MovieId = id;
             var result = query.Handle();
             if(result is null){
@@ -43,7 +47,7 @@ namespace CohortHw_ModelUsing2.Controllers
 
         [HttpPost]
         public IActionResult AddMovie([FromBody] CreateMovieViewModel movie){
-            CreateMovieCommand query = new CreateMovieCommand(_context);
+            CreateMovieCommand query = new CreateMovieCommand(_context, _mapper);
             try
             {
                 query.CreateModel = movie;
@@ -58,7 +62,7 @@ namespace CohortHw_ModelUsing2.Controllers
 
         [HttpPut("{id}")]
         public IActionResult UpdateMovie(int id, [FromBody] UpdateMovieViewModel movie){
-            UpdateMovieCommand query = new UpdateMovieCommand(_context);
+            UpdateMovieCommand query = new UpdateMovieCommand(_context, _mapper);
             try
             {
                 query.MovieId = id;
@@ -74,7 +78,7 @@ namespace CohortHw_ModelUsing2.Controllers
 
         [HttpDelete("{id}")]
         public IActionResult RemoveMovie(int id){
-            UpdateMovieCommand query = new UpdateMovieCommand(_context);
+            DeleteMovieCommand query = new DeleteMovieCommand(_context);
             try
             {
                 query.MovieId = id;

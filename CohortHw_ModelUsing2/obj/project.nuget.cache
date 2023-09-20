@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hNvnXXqzlgHzBl5ctRnrp8uRt8w9bWrwmW+rwgXdSdpIfaFaNtUwHYZGtMtnO5243FmdfbLaK9zkrnRxXRcvpQ==",
+  "dgSpecHash": "l4dnf6UEX/NRphDKH34r+xdJRqoBahMulzoog8Qlkd0uEjlTGrNyfDMFRgYpFwyZd7XkDCvob2xb8+oooD3dLw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj",
+  "projectFilePath": "C:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\patir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\patir\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\patir\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
+    "C:\\Users\\patir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\patir\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\patir\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\patir\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using CohortHw_ModelUsing2.Context;
 using CohortHw_ModelUsing2.Entities;
 
@@ -12,23 +13,19 @@ public class UpdateMovieCommand
     public int MovieId { get; set; }
     public UpdateMovieViewModel UpdateModel { get; set; }
     private readonly MovieDbContext _context;
+    private readonly IMapper _mapper;
 
-    public UpdateMovieCommand(MovieDbContext context){
+    public UpdateMovieCommand(MovieDbContext context, IMapper mapper){
         _context = context;
+        _mapper = mapper;
     }
 
     public void Handle(){
         var movie = _context.Movies.Where(i => i.Id == MovieId).SingleOrDefault();
         if (movie is null)
-            throw new InvalidOperationException("The movie already exists.");
+            throw new InvalidOperationException("The movie doesn't exist.");
         
-        movie.Name = UpdateModel.Name != movie.Name ? UpdateModel.Name : movie.Name;
-        movie.IMDB = UpdateModel.IMDB != movie.IMDB ? UpdateModel.IMDB : movie.IMDB;
-        movie.Director = UpdateModel.Director != movie.Director ? UpdateModel.Director : movie.Director;
-        movie.PublishDate = UpdateModel.PublishDate != movie.PublishDate ? UpdateModel.PublishDate : movie.PublishDate;
-        movie.BannerUrl = UpdateModel.BannerUrl != movie.BannerUrl ? UpdateModel.BannerUrl : movie.BannerUrl;
-        movie.GenreId = UpdateModel.GenreId != movie.GenreId ? UpdateModel.GenreId : movie.GenreId;
-
+        movie = _mapper.Map<Movie>(UpdateModel);
         _context.SaveChanges();
     }
 
