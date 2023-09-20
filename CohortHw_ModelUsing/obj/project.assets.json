@@ -1012,11 +1012,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patir\\Desktop\\Projeler\\Patika\\CohortHw_ModelUsing\\CohortHw_ModelUsing.csproj",
+      "projectUniqueName": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing\\CohortHw_ModelUsing.csproj",
       "projectName": "CohortHw_ModelUsing",
-      "projectPath": "C:\\Users\\patir\\Desktop\\Projeler\\Patika\\CohortHw_ModelUsing\\CohortHw_ModelUsing.csproj",
+      "projectPath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing\\CohortHw_ModelUsing.csproj",
       "packagesPath": "C:\\Users\\patir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patir\\Desktop\\Projeler\\Patika\\CohortHw_ModelUsing\\obj\\",
+      "outputPath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\patir\\AppData\\Roaming\\NuGet\\NuGet.Config"

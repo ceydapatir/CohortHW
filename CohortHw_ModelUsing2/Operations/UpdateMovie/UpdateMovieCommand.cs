@@ -28,6 +28,8 @@ public class UpdateMovieCommand
         movie.PublishDate = UpdateModel.PublishDate != movie.PublishDate ? UpdateModel.PublishDate : movie.PublishDate;
         movie.BannerUrl = UpdateModel.BannerUrl != movie.BannerUrl ? UpdateModel.BannerUrl : movie.BannerUrl;
         movie.GenreId = UpdateModel.GenreId != movie.GenreId ? UpdateModel.GenreId : movie.GenreId;
+
+        _context.SaveChanges();
     }
 
     public class UpdateMovieViewModel{

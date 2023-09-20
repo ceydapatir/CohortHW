@@ -43,9 +43,9 @@ namespace CohortHw_ModelUsing2.Controllers
 
         [HttpPost]
         public IActionResult AddMovie([FromBody] CreateMovieViewModel movie){
+            CreateMovieCommand query = new CreateMovieCommand(_context);
             try
             {
-                CreateMovieCommand query = new CreateMovieCommand(_context);
                 query.CreateModel = movie;
                 query.Handle();
             }
@@ -58,11 +58,26 @@ namespace CohortHw_ModelUsing2.Controllers
 
         [HttpPut("{id}")]
         public IActionResult UpdateMovie(int id, [FromBody] UpdateMovieViewModel movie){
+            UpdateMovieCommand query = new UpdateMovieCommand(_context);
             try
             {
-                UpdateMovieCommand query = new UpdateMovieCommand(_context);
                 query.MovieId = id;
                 query.UpdateModel = movie;
+                query.Handle();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult RemoveMovie(int id){
+            UpdateMovieCommand query = new UpdateMovieCommand(_context);
+            try
+            {
+                query.MovieId = id;
                 query.Handle();
             }
             catch (Exception ex)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ihOnFkq5l7vXX/QJ+Ojs+amD5JelCnnVwF2Pthm7EURaUT4yfl5QZaYKh3gUCtlKdqFZ8j4krkzAbqCV3NqLQw==",
+  "dgSpecHash": "YygkBw02/iwjefPY6BoTY7+wQjfVYaQ5ap8P8SJXDRzVhQiV5spiJdCXfyHhb1ySECHpJrPi9rYkkJA81OrGDg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\patir\\Desktop\\Projeler\\Patika\\CohortHw_ModelUsing\\CohortHw_ModelUsing.csproj",
+  "projectFilePath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing\\CohortHw_ModelUsing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patir\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
     "C:\\Users\\patir\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
