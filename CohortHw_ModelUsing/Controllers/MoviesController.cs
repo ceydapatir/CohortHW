@@ -31,7 +31,8 @@ namespace CohortHw_ModelUsing.Controllers
         [HttpGet("{id}")]
         public IActionResult GetMovieById(int id){
             GetMovieDetailQuery query = new GetMovieDetailQuery(_context);
-            var result = query.Handle(id);
+            query.MovieId = id;
+            var result = query.Handle();
             if(result is null){
                 return BadRequest();
             }
