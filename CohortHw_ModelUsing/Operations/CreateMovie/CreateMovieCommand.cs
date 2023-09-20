@@ -16,13 +16,20 @@ public class CreateMovieCommand
         _context = context;
     }
 
-    public void Handle(CreateMovieViewModel moviemodel){
-        var movie = _context.Movies.Where(i => i.Name == moviemodel.Name).SingleOrDefault();
-            if(movie is not null){
-                throw new InvalidOperationException("The movie already exists.");
-            }
-            _context.Movies.Add(movie);
-            _context.SaveChanges();
+    public void Handle(){
+        var movie = _context.Movies.Where(i => i.Name == CreateModel.Name).SingleOrDefault();
+        if(movie is not null){
+            throw new InvalidOperationException("The movie already exists.");
+        }
+
+        movie = new Movie();
+        movie.Name = CreateModel.Name;
+        movie.IMDB = CreateModel.IMDB;
+        movie.Director = CreateModel.Director;
+        movie.PublishDate = CreateModel.PublishDate;
+        movie.BannerUrl = CreateModel.BannerUrl;
+        _context.Movies.Add(movie);
+        _context.SaveChanges();
     }
 
     public class CreateMovieViewModel{
