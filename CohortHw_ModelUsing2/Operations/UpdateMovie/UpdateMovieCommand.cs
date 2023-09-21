@@ -25,7 +25,7 @@ public class UpdateMovieCommand
         if (movie is null)
             throw new InvalidOperationException("The movie doesn't exist.");
         
-        movie = _mapper.Map<Movie>(UpdateModel);
+        movie = _mapper.Map(UpdateModel,movie);
         _context.SaveChanges();
     }
 
