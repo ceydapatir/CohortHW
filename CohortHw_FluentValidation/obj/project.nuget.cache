@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qxZlcltEYTE7tlzT2w3rC7EDtJjkXOWppWC2Xy8rnAr6BNnYCBBcYVuiTU/p4YAryZdO+1H0kd9qEUMLBBlQ0Q==",
+  "dgSpecHash": "f67yl3sbgdgbmCoWRmF1RX4W8Ov2MGdJT05X7Ih/0BdsTqT3oJVNsNC6B/qLuDLKi78GIKXjOMYtocwLDHDLpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\patir\\Desktop\\Projeler\\Patika\\CohortHw_FluentValidation\\CohortHw_FluentValidation.csproj",
+  "projectFilePath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_FluentValidation\\CohortHw_FluentValidation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\patir\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

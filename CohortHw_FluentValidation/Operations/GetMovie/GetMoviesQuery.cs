@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using CohortHw_FluentValidation.Context;
 using CohortHw_FluentValidation.Entities;
-using CohortHw_FluentValidation.ViewModels;
+using CohortHw_FluentValidation.Models;
 
 namespace CohortHw_FluentValidation.Operations.GetMovie
 {
@@ -19,16 +19,16 @@ namespace CohortHw_FluentValidation.Operations.GetMovie
         }
 
         // Get all movies, if there is no movie, throw an error
-        public List<QueryViewModel> Handle(){
+        public List<QueryModel> Handle(){
             var MovieList = _context.Movies.OrderBy(i => i.Id).ToList<Movie>();
-            List<QueryViewModel> ViewModelList = new List<QueryViewModel>();
-            QueryViewModel ViewModel;
+            List<QueryModel> ViewModelList = new List<QueryModel>();
+            QueryModel ViewModel;
             if(MovieList is null)
                 throw new InvalidOperationException("There are no movies.");
             else
                 foreach (var movie in MovieList)
                 {
-                    ViewModel = _mapper.Map<QueryViewModel>(movie); // Convert movie from Movie to QueryViewModel type
+                    ViewModel = _mapper.Map<QueryModel>(movie); // Convert movie from Movie to QueryViewModel type
                     ViewModelList.Add(ViewModel);
                 }
             return ViewModelList;       

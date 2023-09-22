@@ -8,7 +8,7 @@ using CohortHw_FluentValidation.Operations.CreateMovie;
 using CohortHw_FluentValidation.Operations.DeleteMovie;
 using CohortHw_FluentValidation.Operations.GetMovie;
 using CohortHw_FluentValidation.Operations.UpdateMovie;
-using CohortHw_FluentValidation.ViewModels;
+using CohortHw_FluentValidation.Models;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,7 +30,7 @@ namespace CohortHw_FluentValidation.Controllers
         [HttpGet]
         public IActionResult GetMovies() { 
             GetMoviesQuery query = new GetMoviesQuery(_context, _mapper);
-            List<QueryViewModel> MovieList;
+            List<QueryModel> MovieList;
             try
             {
                 MovieList = query.Handle();
@@ -44,8 +44,8 @@ namespace CohortHw_FluentValidation.Controllers
 
         // POST: api/Movies
         [HttpPost]
-        public IActionResult CreateMovie([FromBody] CommandViewModel viewModel) { 
-            CreateMovieCommand command = new CreateMovieCommand(_context, _mapper, viewModel);
+        public IActionResult CreateMovie([FromBody] CommandModel model) { 
+            CreateMovieCommand command = new CreateMovieCommand(_context, _mapper, model);
             CreateMovieValidator validator = new CreateMovieValidator();
             try
             {
@@ -61,8 +61,8 @@ namespace CohortHw_FluentValidation.Controllers
 
         // PUT: api/Movies/{id}
         [HttpPut("{id}")]
-        public IActionResult UpdateMovie(int id, [FromBody] CommandViewModel viewModel) { 
-            UpdateMovieCommand command = new UpdateMovieCommand(_context, _mapper, id, viewModel);
+        public IActionResult UpdateMovie(int id, [FromBody] CommandModel model) { 
+            UpdateMovieCommand command = new UpdateMovieCommand(_context, _mapper, id, model);
             UpdateMovieValidator validator = new UpdateMovieValidator();
             try
             {

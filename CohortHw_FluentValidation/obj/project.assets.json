@@ -1187,11 +1187,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patir\\Desktop\\Projeler\\Patika\\CohortHw_FluentValidation\\CohortHw_FluentValidation.csproj",
+      "projectUniqueName": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_FluentValidation\\CohortHw_FluentValidation.csproj",
       "projectName": "CohortHw_FluentValidation",
-      "projectPath": "C:\\Users\\patir\\Desktop\\Projeler\\Patika\\CohortHw_FluentValidation\\CohortHw_FluentValidation.csproj",
+      "projectPath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_FluentValidation\\CohortHw_FluentValidation.csproj",
       "packagesPath": "C:\\Users\\patir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patir\\Desktop\\Projeler\\Patika\\CohortHw_FluentValidation\\obj\\",
+      "outputPath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_FluentValidation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\patir\\AppData\\Roaming\\NuGet\\NuGet.Config"
