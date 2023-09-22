@@ -17,6 +17,6 @@ public class MapperProfile : Profile
             .ForMember(i => i.Genre, opt => opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString()))
             .ForMember(i => i.PublishDate, opt => opt.MapFrom(src => src.PublishDate.Date.ToString("dd/MM/yyy")));
         CreateMap<CreateMovieViewModel, Movie>();
-        CreateMap<UpdateMovieViewModel, Movie>().ReverseMap();;
+        CreateMap<UpdateMovieViewModel, Movie>().ReverseMap();
     }
 }

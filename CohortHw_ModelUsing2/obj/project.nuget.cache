@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l4dnf6UEX/NRphDKH34r+xdJRqoBahMulzoog8Qlkd0uEjlTGrNyfDMFRgYpFwyZd7XkDCvob2xb8+oooD3dLw==",
+  "dgSpecHash": "674ogFSN4B6cAbjD3Cnfyv9oHpjOfl1tLqpGbY9iI2bSw8VlCsWZtLMK/oTK5AGcGYl/jkE+Rx4Z0Nh4lXFgHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj",
+  "projectFilePath": "c:\\Users\\patir\\Documents\\GitHub\\CohortHW\\CohortHw_ModelUsing2\\CohortHw_ModelUsing2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\patir\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
